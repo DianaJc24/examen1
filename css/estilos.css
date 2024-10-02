@@ -1,0 +1,304 @@
+*{
+    margin:0px;
+}
+.general{
+    display:grid;
+    height: 150vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:"general1"
+                        "general2";
+}
+
+.general1{
+    grid-area: general1;
+    
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-template-areas:"principal1 principal2 principal3";
+}
+.principal1{
+    grid-area: principal1;
+    background-color: rgb(216, 185, 244);
+    height: 100vh;
+    display:grid;
+    grid-gap:5px;
+    padding: 5px;
+    grid-template-columns: 2fr 2fr /*2fr 2fr 1fr 3fr*/;
+    grid-template-rows: 2fr 2fr 1fr 1fr 2fr 1fr 1fr 1fr;
+    grid-template-areas:"cont1 cont1"
+                        "cont1 cont1"
+                        "cont1 cont1"
+                        "cont2 cont3"
+                        "cont2 cont4"
+                        "cont2 cont4"
+                        "cont5 cont5"
+                        "cont5 cont5";
+}
+.cont1{
+    background-color: aqua;
+    grid-area: cont1;
+    border-radius: 7px;
+}
+.cont2{
+    background-color: aqua;
+    grid-area: cont2;
+    border-radius: 7px;
+}
+.cont3{
+    background-color: aqua;
+    grid-area: cont3;
+    border-radius: 7px;
+}
+.cont4{
+    background-color: aqua;
+    grid-area: cont4;
+    border-radius: 7px;
+}
+.cont5{
+    background-color: aqua;
+    grid-area: cont5;
+    border-radius: 7px;
+}
+
+.principal2{
+    grid-area: principal2;
+    background-color: rgb(216, 185, 244);
+    height: 100vh;
+    display:grid;
+    grid-gap:5px;
+    padding: 5px;
+    grid-template-columns: 2fr 2fr /*2fr 2fr 1fr 3fr*/;
+    grid-template-rows: 2fr 2fr 1fr 1fr 2fr 1fr 1fr 1fr;
+    grid-template-areas:"cont6 cont7"
+                        "cont6 cont8"
+                        "cont6 cont8"
+                        "cont6 cont8"
+                        "cont6 cont8"
+                        "cont9 cont9"
+                        "cont9 cont9"
+                        "cont9 cont9";
+}
+.cont6{
+    background-color: aqua;
+    grid-area: cont6;
+    border-radius: 7px;
+}
+.cont7{
+    background-color: aqua;
+    grid-area: cont7;
+    border-radius: 7px;
+}
+.cont8{
+    background-color: aqua;
+    grid-area: cont8;
+    border-radius: 7px;
+}
+.cont9{
+    background-color: aqua;
+    grid-area: cont9;
+    border-radius: 7px;
+}
+.principal3{
+    grid-area: principal3;
+    background-color: rgb(216, 185, 244);
+    height: 100vh;
+    display:grid;
+    grid-gap:5px;
+    padding: 5px;
+    grid-template-columns: 1fr 4fr /*2fr 2fr 1fr 3fr*/;
+    grid-template-rows: 2fr 2fr 1fr 1fr 2fr 1fr 1fr 1fr;
+    grid-template-areas:"cont10 cont10"
+                        "cont11 cont12"
+                        "cont13 cont13"
+                        "cont13 cont13"
+                        "cont13 cont13"
+                        "cont13 cont13"
+                        "cont13 cont13"
+                        "cont14 cont14";
+}
+.cont10{
+    background-color: aqua;
+    grid-area: cont10;
+    border-radius: 7px;
+}
+.cont11{
+    background-color: aqua;
+    grid-area: cont11;
+    border-radius: 7px;
+}
+.cont12{
+    background-color: aqua;
+    grid-area: cont12;
+    border-radius: 7px;
+}
+.cont13{
+    background-color: aqua;
+    grid-area: cont13;
+    border-radius: 7px;
+}
+.cont14{
+    background-color: aqua;
+    grid-area: cont14;
+}
+
+.general2{
+    display: grid;
+    padding-top: 5px;
+    grid-area: general2;
+    height: 50vh;
+    grid-gap:5px;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-areas:"letra1 letra2 letra3 letra4 letra5";
+}
+.letra1{
+    grid-area: letra1;
+    height: 50vh;
+    display: grid;
+    padding-right: 5px;
+    background-color: rgb(250, 97, 184);
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(4,1fr);
+}
+.cuadro1{
+    background-color: rgb(0, 255, 17);
+    grid-column: 1/3;
+    grid-row: 1/2;
+    min-height: 50px;
+}
+.cuadro2{
+    background-color: rgb(0, 255, 17);
+    grid-column:1/2;
+    grid-row: 2/4;
+}
+
+.cuadro4{
+    background-color: rgb(0, 255, 17);
+    grid-column:3/4;
+    grid-row: 2/4;
+}
+.cuadro5{
+    background-color: rgb(0, 255, 17);
+    grid-column:1/3;
+    grid-row: 4/5;
+}
+.letra2{
+    grid-area: letra2;
+    height: 50vh;
+    display: grid;
+    padding-right: 5px;
+    background-color: rgb(252, 62, 236);
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(4,1fr);
+}
+.cuadro1-2{
+    background-color: rgb(0, 255, 17);
+    grid-column:1/4;
+    grid-row: 1/2;
+}
+.cuadro2-2{
+    background-color: rgb(0, 255, 17);
+    grid-column:2/3;
+    grid-row: 2/4;
+}
+.cuadro3-2{
+    background-color: rgb(0, 255, 17);
+    grid-column:1/4;
+    grid-row: 4/5;
+}
+
+.letra3{
+    height: 50vh;
+    grid-area: letra3;
+    display: grid;
+    padding-right: 5px;
+    background-color: rgb(227, 124, 255);
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(4,1fr);
+}
+.cuadro1-3{
+    background-color: rgb(0, 255, 17);
+    grid-column:1/4;
+    grid-row: 1/2;
+}
+.cuadro2-3{
+    background-color: rgb(0, 255, 17);
+    grid-column:1/2;
+    grid-row: 2/5;
+}
+.cuadro3-3{
+    background-color: rgb(0, 255, 17);
+    grid-column:2/3;
+    grid-row: 3/4;
+}
+.cuadro4-3{
+    background-color: rgb(0, 255, 17);
+    grid-column:3/4;
+    grid-row: 2/5;
+}
+
+.letra4{
+    height: 50vh;
+    grid-area: letra4;
+    display: grid;
+    padding-right: 5px;
+    background-color: rgb(208, 0, 255);
+    grid-template-columns: 2fr 1fr 1fr 1fr 2fr;
+    grid-template-rows: repeat(5,1fr);
+}
+.cuadro1-4{
+    background-color: rgb(0, 255, 17);
+    grid-column:1/2;
+    grid-row: 1/6;
+}
+.cuadro2-4{
+    background-color: rgb(0, 255, 17);
+    grid-column:2/3;
+    grid-row: 2/3;
+}
+.cuadro3-4{
+    background-color: rgb(0, 255, 17);
+    grid-column:3/4;
+    grid-row: 3/4;
+}
+.cuadro4-4{
+    background-color: rgb(0, 255, 17);
+    grid-column:4/5;
+    grid-row: 4/5;
+}
+.cuadro5-4{
+    background-color: rgb(0, 255, 17);
+    grid-column:5/6;
+    grid-row: 1/6;
+}
+.letra5{
+    height: 50vh;
+    grid-area: letra5;
+    display: grid;
+    padding-right: 5px;
+    background-color: rgb(171, 52, 245);
+    grid-template-columns: repeat(31fr);
+    grid-template-rows: repeat(4,1fr);
+}
+
+@media screen and (max-width:768px){
+    .general1{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas:"principal1"
+                            "principal2"
+                            "principal3";
+    }
+    .general2{
+        height: 200vh;
+        padding-top: 5px;
+        gap: 10px;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5,1fr);
+        grid-template-areas:"letra1"
+                            "letra2"
+                            "letra3"
+                            "letra4"
+                            "letra5";
+    }
+}
